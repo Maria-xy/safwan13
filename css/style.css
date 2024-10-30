@@ -1,4 +1,38 @@
 /* ============================
+        common css start
+=============================== */
+.common_button{
+        background-color: #E5745D;
+    width: 175px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.common_button a{
+        background-color:#E5745D;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-family: "Jost", sans-serif;
+    font-weight: 500; 
+}
+
+.common_button a::after{
+        width: 163px;
+        position: absolute;
+        border: 1px solid white;
+        top: -12px;
+        left: -41px;
+        height: 47px;
+        content: " ";
+}
+/* ============================
+        common css end
+=============================== */
+/* ============================
         Navber start
 =============================== */
 
@@ -47,7 +81,59 @@
         Banner start
 =============================== */
  
+.banner{
+    background: #00413D;
+    width: 100%;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 
+}
+
+.banner_part h1{
+        color: white;
+        font-family: "Vollkorn", serif;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 110px;
+       padding-top: 170px;
+}
+.banner_part h1 span{
+        display: block;
+}
+
+.banner_part p span{
+       color: white;
+
+}
+
+.banner_part p{
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        width: 527px;
+        color: rgb(255, 255, 255,0.5);
+       
+}
+
+.banner .overly{
+       background-image: url(../images/bannerimage.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: -40%;
+    top: 0px;
+    transition: .6s;
+}
+
+.banner:hover .overly{
+        right: 0%;
+}
 
 /* ============================
         Banner end
